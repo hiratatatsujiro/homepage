@@ -8,17 +8,19 @@
 </head>
 <body>
     <div class="container">
+      <div id="app">
     <header>
       <div class="title">平田書院 since 1962</div>
       <div class="phone-number">
-        <div>tel：0942-77-0017</div>
-        <div>携帯：090-****-****</div>
+        <div>tel：{{ tel }}</div>
+        <div>携帯：{{ phone }}</div>
       </div>
      </header>
     <main>
-      <div id="app" class="slide-show">
-        {{ msg }}
+      <div  class="slide-show">
+
       </div>
+     
       <div class="introduction">
         <h1>ようこそ平田書院へ</h1>
         <p>平田書院のホームページへアクセスしていただきありがとうございます。<br>本書院は子どもから大人まで老若男女問わず文字に親しむことを理念とし、活動しています。<br>古来より文字は心を表すと言われてきました。<br>文字を上達させることは、美しい心に繋がります。<br>お気軽にお問い合わせください。<br>mutsumi hirata</p>
@@ -32,8 +34,8 @@
         <p class="information-p">information</p>
         <ul>
           <li>代表： 平田むつみ</li>
-          <li>電話番号： 0942-77-0017</li>
-          <li>携帯電話： 090-****-****</li>
+          <li>電話番号： {{ tel }}</li>
+          <li>携帯電話： {{ phone }}</li>
           <li>開催日： 月曜日１６：００〜 土曜日１９：００〜</li>
           <li>定休日： 第５週</li>
         </ul>
@@ -47,7 +49,9 @@
           <img src="images/access.png" width="300" height="180">
         </ul>
       </div>
-    </footer>  
+    </footer>
+      
+  </div>  
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
