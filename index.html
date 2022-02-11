@@ -25,9 +25,19 @@
         <h1>ようこそ平田書院へ</h1>
         <p>平田書院のホームページへアクセスしていただきありがとうございます。<br>本書院は子どもから大人まで老若男女問わず文字に親しむことを理念とし、活動しています。<br>古来より文字は心を表すと言われてきました。<br>文字を上達させることは、美しい心に繋がります。<br>お気軽にお問い合わせください。<br>{{ name }}</p>
       </div>
-      <div class="view"></div>
-      <div class="schedule"></div>
-      <div class="teacher"></div>
+      <div class="view">
+        <h1>教室の風景</h1>
+      </div>
+      <div class="schedule">
+        <h1>カレンダー</h1>
+      </div>
+      <div class="teacher">
+        <h1>講師紹介</h1>
+        <p>講師：{{ name }}</p>
+        <p>福岡県生まれ</p>
+        <p>書道歴４０年</p>
+        <p>受賞：福岡県県展入選</p>
+      </div>
     </main>
     <footer>
       <div class="information">
@@ -43,10 +53,10 @@
       <div class="access">
         <p class="information-p">アクセス</p>
         <ul>
-          <li></li>
+
           <li>住所： 福岡県三井郡大刀洗町本郷２３８３−１</li>
           <li>西鉄大牟田線 本郷駅より徒歩２分</li>
-          <img src="images/access.png" width="300" height="180">
+          <img v-bind:src="area" width="300" height="180">
         </ul>
       </div>
     </footer>
