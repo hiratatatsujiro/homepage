@@ -20,13 +20,26 @@ header {
 
 main {
   background-color: white;
-  height: calc(100vh - 160px);
+  height: calc(100% - 160px);
   padding: 10px;
 }
 
 .introduction {
   text-align: center;
   font-size: 24px;
+}
+
+.container h1{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 36px;
+  text-decoration:underline;/*下線を引く*/
+  text-underline-position:above;
+  text-decoration-color:yellow;
+}
+
+.view {
+  text-align: center;
 }
 
 footer {
@@ -40,4 +53,9 @@ footer {
 .information-p {
   font-size: 24px;
   margin-top: 10px;
+}
+
+.teacher p {
+  font-size: 24px;
+  text-align: center;
 }
