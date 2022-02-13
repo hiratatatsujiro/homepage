@@ -5,6 +5,7 @@ const app = new Vue({
     tel: "0942-77-0017",
     phone: "090-****-****",
     area: "images/access.png",
-    wday: ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
+    wday: ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"],
+    teacherImage: "images/pre_teacher.png"
   }
 })
