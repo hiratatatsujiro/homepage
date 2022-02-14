@@ -78,3 +78,10 @@ table {
   text-align: center;
 }
 
+.picture {
+  width: 400px;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
