@@ -13,6 +13,20 @@ const app = new Vue({
     picture4: "images/sample4.png",
     picture5: "images/sample5.png",
     picture6: "images/sample6.png",
-    show1: false
+    visible: false
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (!this.visible) {
+        const top = this.$el.getBoundingClientRect().top;
+        this.visible = top < window.innerHeight + 100;
+      }
+    }
   }
 })

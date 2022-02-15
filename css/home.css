@@ -20,7 +20,7 @@ header {
 
 main {
   background-color: white;
-  height: calc(100% - 580px);
+  height: calc(3000px - 580px);
   padding: 10px;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -85,28 +85,16 @@ table {
   margin-right: 10px;
 }
 
-.v-enter {
-  opacity: 0;
-  transform: translate(50px);
+.fadeIn {
+  animation: fadeIn 2s;
 }
-
-.v-enter-active {
-  transition: all 1s;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
-
-.v-enter-to {
-  opacity: 1;
-}
-
-.v-leave {
-  opacity: 1;
-}
-
-.v-leave-active {
-  transition: all 1s;
-}
-
-.v-leave-to {
-  opacity: 0;
-  transform: translate(50px);
-} 
