@@ -13,6 +13,6 @@ const app = new Vue({
     picture4: "images/sample4.png",
     picture5: "images/sample5.png",
     picture6: "images/sample6.png",
-
+    show1: false
   }
 })
