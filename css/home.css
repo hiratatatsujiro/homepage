@@ -46,7 +46,7 @@ main {
 
 footer {
   background-color: rgb(233, 170, 111);
-  height: 500px;
+  height: 1000px;
   margin: 0 auto;
   text-align: center;
   padding: 10px;
@@ -101,4 +101,9 @@ table {
 
 .slide-show {
   text-align: center;
+}
+
+button {
+  background-color: rgb(250, 237, 219);
+  color: black;
 }
