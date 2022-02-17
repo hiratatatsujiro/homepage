@@ -86,7 +86,7 @@ const app = new Vue({
     },
     toggleAuto: function(auto){
       if (this.auto == auto) return
-      this.auto == auto
+      this.auto = auto
       if (auto) {
         this.slideShow()
       } else {
