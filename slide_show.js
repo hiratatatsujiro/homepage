@@ -22,12 +22,13 @@ Vue.component("control-panel", {
   <div>
     <button @click="$emit('prev-photo')">前へ</button>
     <button @click="$emit('next-photo')">次へ</button>
+    <label for="auto">自動</label>
     <input type="checkbox" v-model='auto' id='auto' @change="$emit('toggle-auto', auto)">
   </div>
   `,
   data: function(){
     return {
-      auto: true
+      auto: false
     }
   }
 })
@@ -48,14 +49,14 @@ const app = new Vue({
     picture5: "images/sample5.png",
     picture6: "images/sample6.png",
     visible: false,
-    auto: true,
+    auto: false,
     photos: photos,
     id: 0,
     photo: null,
     timerID: null,
     SLIDEINTERVAL: 3000
   },
-  created() {
+  mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
@@ -95,10 +96,10 @@ const app = new Vue({
     slideShow: function(){
       this.nextPhoto()
       var self = this
-      this.timerID = selfTimeout(self.slideShow, self.SLIDEINTERVAL)
+      this.timerID = setTimeout(self.slideShow, self.SLIDEINTERVAL)
     }
   },
-  mounted: function(){
+  created: function(){
     this.photo = this.photos[this.id]
   }
 })
