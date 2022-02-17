@@ -20,7 +20,7 @@ header {
 
 main {
   background-color: white;
-  height: calc(3000px - 580px);
+  height: calc(3700px - 580px);
   padding: 10px;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -86,7 +86,7 @@ table {
 }
 
 .fadeIn {
-  animation: fadeIn 2s;
+  animation: fadeIn 4s;
 }
 @keyframes fadeIn {
   0% {
@@ -97,4 +97,8 @@ table {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.slide-show {
+  text-align: center;
 }
