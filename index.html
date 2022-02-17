@@ -19,18 +19,29 @@
       </div>
      </header>
     <main>
-      <div class="animation" v-show="visible" v-bind:class="{fadeIn: visible}">
       <div  class="slide-show">
-
+        <photo-display
+          @next-photo="nextPhoto"
+          v-bind:photo="photo"
+        ></photo-display>
+        <control-panel
+          class="cpanel"
+          @prev-photo="prevPhoto"
+          @next-photo="nextPhoto"
+          @toggle-photo="toggleAuto" 
+        ></control-panel>
       </div>
+      
+      <div class="animation"  v-show="visible" v-bind:class="{fadeIn: visible}">
+     
     
         <div class="introduction">
         <h1>ようこそ平田書院へ</h1>
         <p>平田書院のホームページへアクセスしていただきありがとうございます。<br>本書院は子どもから大人まで老若男女問わず文字に親しむことを理念とし、活動しています。<br>古来より文字は心を表すと言われてきました。<br>文字を上達させることは、美しい心に繋がります。<br>お気軽にお問い合わせください。<br>{{ name }}</p>
-      </div>
+        </div>
       
 
-      <div class="view">
+        <div class="view">
         <h1>教室の風景</h1>
         <img v-bind:src="picture1" class="picture">
         <img v-bind:src="picture2" class="picture">
@@ -38,8 +49,8 @@
         <img v-bind:src="picture4" class="picture">
         <img v-bind:src="picture5" class="picture">
         <img v-bind:src="picture6" class="picture">
-      </div>
-      <div class="schedule">
+        </div>
+       <div class="schedule">
         <h1>開催日</h1>
         <table class="table">
           <th v-for="day in wday">{{ day }}</th>
@@ -57,18 +68,19 @@
         <p class="information-p">毎月第５週はお休みです。</p> 
         <h1>月謝</h1>
         <p class="fare">3000円(用紙代別)</p>
-      </div>
-      <div class="teacher">
+       </div>
+        <div class="teacher">
         <h1>講師紹介</h1>
         <img v-bind:src="teacherImage" class="teacher-image">
         <p>講師：{{ name }}</p>
         <p>福岡県生まれ</p>
         <p>書道歴４０年</p>
         <p>受賞：福岡県県展入選</p>
-      </div>   
-      </div>
-    </main>
-    <footer>
+        </div>   
+      
+     </div>
+      </main>
+     <footer>
       <div class="information">
         <p class="information-p">information</p>
         <ul>
