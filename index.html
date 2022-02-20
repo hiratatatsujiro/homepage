@@ -12,10 +12,9 @@
     <div class="container">
       <div id="app">
     <header>
-      <div class="title">平田書院 since 1962</div>
+      <div class="title">平田書院 since 1982</div>
       <div class="phone-number">
         <div>tel：{{ tel }}</div>
-        <div>携帯：{{ phone }}</div>
       </div>
      </header>
     <main>
@@ -53,29 +52,28 @@
        <div class="schedule">
         <h1>開催日</h1>
         <table class="table">
-          <th v-for="day in wday">{{ day }}</th>
+            <th>月曜日</th>
+            <th>土曜日</th>
           <tr class="tr">
-            <td>なし</td>
-            <td>16:00〜</td>
-            <td>なし</td>
-            <td>なし</td>
-            <td>なし</td>
-            <td>なし</td>
-            <td>19:00〜</td>
+            <td>16:30〜</td>
+            <td>13:30〜 and 19:00〜</td>
           </tr>
         </table>
         <p class="information-p">月曜日または土曜日にご参加ください。月４回です。</p>
         <p class="information-p">毎月第５週はお休みです。</p> 
         <h1>月謝</h1>
-        <p class="fare">3000円(用紙代別)</p>
+        <p class="fare">中学生以下：３,６００円</p>
+        <p class="fare">学生：４,０００円</p>
+        <p class="fare">一般：５,０００円</p>
+        <p class="fare_enter">※入会金は別途２,５００円かかります</p>
        </div>
         <div class="teacher">
         <h1>講師紹介</h1>
         <img v-bind:src="teacherImage" class="teacher-image">
-        <p>講師：{{ name }}</p>
+        <p>師範：{{ name }}</p>
         <p>福岡県生まれ</p>
-        <p>書道歴４０年</p>
-        <p>受賞：福岡県県展入選</p>
+        <p>書道歴５０年</p>
+        <p>主な賞歴：福岡県県展入選</p>
         </div>   
       
      </div>
@@ -86,8 +84,7 @@
         <ul>
           <li>代表： {{ name }}</li>
           <li>電話番号： {{ tel }}</li>
-          <li>携帯電話： {{ phone }}</li>
-          <li>開催日： 月曜日１６：００〜 土曜日１９：００〜</li>
+          <li>開催日： 月曜日１６：３０〜 土曜日１９：３０〜</li>
           <li>定休日： 第５週</li>
         </ul>
       </div>
