@@ -17,8 +17,8 @@
         <div>tel：{{ tel }}</div>
       </div>
      </header>
-    <main>
-      <div  class="slide-show">
+    <main   v-show="visible" v-bind:class="{fadeIn: visible}">
+      <!-- <div  class="slide-show">
         <photo-display
           @next-photo="nextPhoto"
           v-bind:photo="photo"
@@ -29,9 +29,9 @@
           @next-photo="nextPhoto"
           @toggle-auto="toggleAuto" 
         ></control-panel>
-      </div>
+      </div> -->
       
-      <div class="animation"  v-show="visible" v-bind:class="{fadeIn: visible}">
+      <div class="animation">
      
     
         <div class="introduction">
@@ -41,13 +41,15 @@
       
 
         <div class="view">
-        <h1>教室の風景</h1>
+        <h1>フォトギャラリー</h1>
         <img v-bind:src="picture1" class="picture">
         <img v-bind:src="picture2" class="picture">
         <img v-bind:src="picture3" class="picture">
         <img v-bind:src="picture4" class="picture">
         <img v-bind:src="picture5" class="picture">
         <img v-bind:src="picture6" class="picture">
+        <img v-bind:src="picture7" class="picture">
+        <img v-bind:src="picture8" class="picture">
         </div>
        <div class="schedule">
         <h1>開催日</h1>
@@ -56,7 +58,7 @@
             <th>土曜日</th>
           <tr class="tr">
             <td>16:30〜</td>
-            <td>13:30〜 and 19:00〜</td>
+            <td>13:30〜 or 19:00〜</td>
           </tr>
         </table>
         <p class="information-p">月曜日または土曜日にご参加ください。月４回です。</p>

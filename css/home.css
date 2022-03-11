@@ -55,11 +55,17 @@ footer {
 .information-p {
   font-size: 24px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .teacher p {
   font-size: 24px;
   text-align: center;
+}
+
+.teacher-image {
+  height: 500px;
+  width: 380px;
 }
 
 table {
@@ -69,7 +75,7 @@ table {
 }
 
 .fare {
-  font-size: 50px;
+  font-size: 24px;
   text-align: center;
   color: rgb(194, 56, 137);
 }
@@ -83,6 +89,7 @@ table {
   height: 300px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .fadeIn {
@@ -110,5 +117,5 @@ button {
 
 .fare_enter {
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
 }

@@ -46,6 +46,8 @@ const app = new Vue({
     picture4: "images/sample4.png",
     picture5: "images/sample5.png",
     picture6: "images/sample6.png",
+    picture7: "images/sample7.png",
+    picture8: "images/sample8.png",
     visible: false,
     auto: false,
     photos: photos,
@@ -55,10 +57,10 @@ const app = new Vue({
     SLIDEINTERVAL: 3000
   },
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("load", this.handleScroll);
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("load", this.handleScroll);
   },
   methods: {
     handleScroll() {
