@@ -22,8 +22,6 @@ main {
   background-color: white;
   height: calc(100% - 580px);
   padding: 10px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
 }
 
 .introduction {
@@ -68,11 +66,6 @@ footer {
   width: 380px;
 }
 
-table {
-  text-align: center;
-  border: 1px solid black;
-  font-size: 24px;
-}
 
 .fare {
   font-size: 24px;
@@ -123,4 +116,13 @@ button {
 .fare_enter {
   text-align: center;
   font-size: 24px;
+}
+
+/* スマホ表示時 */
+@media (max-width: 500px) {
+  .header-left {
+    font-size: 16px;
+    line-height: 80px;
+    margin-left: 20px;
+  }
 }
